@@ -48,7 +48,7 @@ public class Customer {
         this.rentals = rentals;
     }
 
-    public void rentMovie(Movie movie, int daysRented) {
+    public void rentMovie(Movie movie, int daysRented) throws Exception {
         Rental rental = new Rental(movie, daysRented);
         rentals.add(rental);
     }
