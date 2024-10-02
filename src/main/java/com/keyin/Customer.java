@@ -48,4 +48,8 @@ public class Customer {
         this.rentals = rentals;
     }
 
+    public void rentMovie(Movie movie, int daysRented) {
+        Rental rental = new Rental(movie, daysRented);
+        rentals.add(rental);
+    }
 }
