@@ -6,10 +6,10 @@ import java.util.List;
 public class Customer {
     private String name;
     private String email;
-    private int phoneNum;
+    private String phoneNum;
     private List<Rental> rentals;
 
-    public Customer (String name, String email, int phoneNum) {
+    public Customer (String name, String email, String phoneNum) {
         this.name = name;
         this.rentals = new ArrayList<>();
     }
@@ -23,7 +23,7 @@ public class Customer {
         return email;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 
@@ -40,7 +40,7 @@ public class Customer {
         this.email = email;
     }
 
-    public void setPhoneNum(int phoneNum) {
+    public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
 
