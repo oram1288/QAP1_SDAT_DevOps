@@ -68,7 +68,7 @@ public class Movie {
         if (isRented) {
             this.isRented = false;
         } else {
-            throw new Exception("Movie was not rented");
+            throw new Exception("Movie is available to rent");
         }
     }
 }

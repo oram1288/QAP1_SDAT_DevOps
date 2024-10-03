@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class CustomerTest {
     @Test
     public void testRentMovie() throws Exception {
-        Customer customer = new Customer("Cody Oram", "cody@gmail.com", 709123123);
+        Customer customer = new Customer("Cody Oram", "cody@gmail.com", "709-123-4567");
         Movie movie = new Movie("The Dark Knight","Action","2h 32m", "Christopher Nolan");
 
         customer.rentMovie(movie, 5);
@@ -16,14 +16,14 @@ public class CustomerTest {
 
     @Test
     public void testEmptyRentalList() {
-        Customer customer = new Customer("Cody Oram", "cody@gmail.com", 709123123);
+        Customer customer = new Customer("Cody Oram", "cody@gmail.com", "709-123-4567");
 
         assertTrue(customer.getRentals().isEmpty()); // No movie rentals in customers list
     }
 
     @Test
     public void testRentSameMovieTwice() throws Exception {
-        Customer customer = new Customer("Cody Oram", "cody@gmail.com", 709123123);
+        Customer customer = new Customer("Cody Oram", "cody@gmail.com", "709-123-4567");
         Movie movie = new Movie("The Dark Knight","Action","2h 32m", "Christopher Nolan");
 
         customer.rentMovie(movie, 5);
