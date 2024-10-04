@@ -10,7 +10,13 @@ public class RentalSystem {
         customer.rentMovie(movie2,3);
 
         for (Rental rental : customer.getRentals()) {
-            System.out.println("Movie: " + rental.getMovie().getTitle() + ", Days Rented: " + rental.getDaysRented() + ", Customer: " + customer.getName());
+            System.out.println("Movie: " + rental.getMovie().getTitle() + "\n"
+                    + "Days Rented: " + rental.getDaysRented() + "\n"
+                    + "Customer: " + "\n"
+                    + " Name: " + customer.getName() + "\n"
+                    + " Email: " + customer.getEmail() + "\n"
+                    + " Phone Number: " + customer.getPhoneNum() + "\n"
+            );
         }
     }
 }

@@ -11,6 +11,8 @@ public class Customer {
 
     public Customer (String name, String email, String phoneNum) {
         this.name = name;
+        this.email = email;
+        this.phoneNum = phoneNum;
         this.rentals = new ArrayList<>();
     }
 
